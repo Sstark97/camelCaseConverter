@@ -1,8 +1,4 @@
-import { saidHello} from "../core/example";
-
-function camelCaseConverter(aText: string) {
-    return "";
-}
+import {camelCaseConverter} from "../core/camelCaseConverter";
 
 describe("CamelCaseConverter", () => {
     it("should allow empty text", () => {
