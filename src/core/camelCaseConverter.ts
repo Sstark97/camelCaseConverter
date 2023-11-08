@@ -1,3 +1,5 @@
 export function camelCaseConverter(aText: string) {
-    return aText.charAt(0).toUpperCase() + aText.substring(1, aText.length);
+    const firstLetter = aText.charAt(0).toUpperCase();
+    const textRemainder = aText.substring(1, aText.length);
+    return `${firstLetter}${textRemainder}`;
 }
