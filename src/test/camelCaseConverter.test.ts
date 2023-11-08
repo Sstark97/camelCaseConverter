@@ -13,9 +13,13 @@ describe("CamelCaseConverter", () => {
 
     it("should be the same when the text is already in PascalCase", () => {
         expect(camelCaseConverter("Foo")).toBe("Foo")
-    });
+    })
 
     it("should transform to PascalCase a single word that not have this format", () => {
         expect(camelCaseConverter("foo")).toBe("Foo")
+    })
+
+    it("should remove a blank space between two words capitalized", () => {
+        expect(camelCaseConverter("Foo Bar")).toBe("FooBar")
     })
 })
