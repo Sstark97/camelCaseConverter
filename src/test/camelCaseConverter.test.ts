@@ -1,7 +1,7 @@
 import { saidHello} from "../core/example";
 
 function camelCaseConverter(aText: string) {
-    return undefined;
+    return "";
 }
 
 describe("CamelCaseConverter", () => {
